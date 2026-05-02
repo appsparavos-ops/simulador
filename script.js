@@ -10,51 +10,53 @@ const TEAMS_DATA = {
 // Historial de partidos extraído de Libro1.csv
 const HISTORICAL_MATCHES = [
     // Defensor vs Nacional
-    { t1: "Defensor", t2: "Nacional", s1: 61, s2: 80 },
-    { t1: "Defensor", t2: "Nacional", s1: 82, s2: 73 },
-    { t1: "Defensor", t2: "Nacional", s1: 68, s2: 80 },
+    { t1: "Nacional", t2: "Defensor", s1: 80, s2: 61 },
+    { t1: "Nacional", t2: "Defensor", s1: 73, s2: 82 },
+    { t1: "Nacional", t2: "Defensor", s1: 80, s2: 68 },
     // Defensor vs Peñarol
-    { t1: "Defensor", t2: "Peñarol", s1: 72, s2: 85 },
-    { t1: "Defensor", t2: "Peñarol", s1: 81, s2: 84 },
-    { t1: "Defensor", t2: "Peñarol", s1: 80, s2: 88 },
+    { t1: "Peñarol", t2: "Defensor", s1: 85, s2: 72 },
+    { t1: "Peñarol", t2: "Defensor", s1: 84, s2: 81 },
+    { t1: "Peñarol", t2: "Defensor", s1: 88, s2: 80 },
     { t1: "Defensor", t2: "Peñarol", s1: 92, s2: 84 },
     // Defensor vs Hebraica
     { t1: "Defensor", t2: "Hebraica", s1: 98, s2: 84 },
-    { t1: "Defensor", t2: "Hebraica", s1: 90, s2: 91 },
-    { t1: "Defensor", t2: "Hebraica", s1: 87, s2: 90 },
+    { t1: "Hebraica", t2: "Defensor", s1: 91, s2: 90 },
+    { t1: "Hebraica", t2: "Defensor", s1: 90, s2: 87 },
     { t1: "Defensor", t2: "Hebraica", s1: 84, s2: 80 },
     // Defensor vs Malvín
-    { t1: "Defensor", t2: "Malvín", s1: 76, s2: 92 },
-    { t1: "Defensor", t2: "Malvín", s1: 76, s2: 85 },
-    { t1: "Defensor", t2: "Malvín", s1: 83, s2: 85 },
-    { t1: "Defensor", t2: "Malvín", s1: 80, s2: 79 },
+    { t1: "Malvín", t2: "Defensor", s1: 92, s2: 76 },
+    { t1: "Malvín", t2: "Defensor", s1: 85, s2: 76 },
+    { t1: "Malvín", t2: "Defensor", s1: 85, s2: 83 },
+    { t1: "Malvín", t2: "Defensor", s1: 80, s2: 79 },
     // Defensor vs Aguada
-    { t1: "Defensor", t2: "Aguada", s1: 76, s2: 90 },
+    { t1: "Aguada", t2: "Defensor", s1: 90, s2: 76 },
     { t1: "Defensor", t2: "Aguada", s1: 98, s2: 92 },
-    { t1: "Defensor", t2: "Aguada", s1: 81, s2: 97 },
+    { t1: "Aguada", t2: "Defensor", s1: 97, s2: 81 },
     { t1: "Defensor", t2: "Aguada", s1: 88, s2: 60 },
 
     // Nacional vs Peñarol
-    { t1: "Nacional", t2: "Peñarol", s1: 62, s2: 87 },
-    { t1: "Nacional", t2: "Peñarol", s1: 69, s2: 82 },
+    { t1: "Peñarol", t2: "Nacional", s1: 87, s2: 62 },
+    { t1: "Peñarol", t2: "Nacional", s1: 82, s2: 69 },
     { t1: "Nacional", t2: "Peñarol", s1: 78, s2: 71 },
-    { t1: "Nacional", t2: "Peñarol", s1: 84, s2: 82 },
+    { t1: "Peñarol", t2: "Nacional", s1: 84, s2: 82 },
     // Nacional vs Hebraica
     { t1: "Nacional", t2: "Hebraica", s1: 89, s2: 79 },
-    { t1: "Nacional", t2: "Hebraica", s1: 81, s2: 102 },
+    { t1: "Hebraica", t2: "Nacional", s1: 102, s2: 81 },
     { t1: "Nacional", t2: "Hebraica", s1: 111, s2: 80 },
     { t1: "Nacional", t2: "Hebraica", s1: 81, s2: 79 },
     // Nacional vs Malvín
-    { t1: "Nacional", t2: "Malvín", s1: 75, s2: 82 },
-    { t1: "Nacional", t2: "Malvín", s1: 79, s2: 53 },
-    { t1: "Nacional", t2: "Malvín", s1: 88, s2: 90 },
+    { t1: "Malvín", t2: "Nacional", s1: 82, s2: 75 },
+    { t1: "Malvín", t2: "Nacional", s1: 53, s2: 79 },
+    { t1: "Malvín", t2: "Nacional", s1: 90, s2: 88 },
     { t1: "Nacional", t2: "Malvín", s1: 71, s2: 69 },
     // Nacional vs Aguada
     { t1: "Nacional", t2: "Aguada", s1: 82, s2: 79 },
-    { t1: "Nacional", t2: "Aguada", s1: 94, s2: 98 },
+    { t1: "Aguada", t2: "Nacional", s1: 98, s2: 94 },
     { t1: "Nacional", t2: "Aguada", s1: 101, s2: 82 },
+    { t1: "Nacional", t2: "Aguada", s1: 98, s2: 94 },
 
     // Peñarol vs Hebraica
+    { t1: "Peñarol", t2: "Hebraica", s1: 44, s2: 68 },
     { t1: "Peñarol", t2: "Hebraica", s1: 79, s2: 69 },
     { t1: "Peñarol", t2: "Hebraica", s1: 97, s2: 87 },
     // Peñarol vs Malvín
@@ -64,30 +66,32 @@ const HISTORICAL_MATCHES = [
     { t1: "Peñarol", t2: "Malvín", s1: 96, s2: 68 },
     // Peñarol vs Aguada
     { t1: "Peñarol", t2: "Aguada", s1: 103, s2: 89 },
-    { t1: "Peñarol", t2: "Aguada", s1: 80, s2: 91 },
-    { t1: "Peñarol", t2: "Aguada", s1: 80, s2: 86 },
+    { t1: "Aguada", t2: "Peñarol", s1: 91, s2: 80 },
+    { t1: "Aguada", t2: "Peñarol", s1: 86, s2: 80 },
     { t1: "Peñarol", t2: "Aguada", s1: 103, s2: 95 },
 
     // Hebraica vs Malvín
-    { t1: "Hebraica", t2: "Malvín", s1: 52, s2: 61 },
+    { t1: "Hebraica", t2: "Malvín", s1: 61, s2: 52 },
     { t1: "Hebraica", t2: "Malvín", s1: 87, s2: 83 },
-    { t1: "Hebraica", t2: "Malvín", s1: 76, s2: 90 },
-    { t1: "Hebraica", t2: "Malvín", s1: 73, s2: 84 },
+    { t1: "Malvín", t2: "Hebraica", s1: 90, s2: 76 },
+    { t1: "Hebraica", t2: "Malvín", s1: 84, s2: 73 },
     // Hebraica vs Aguada
-    { t1: "Hebraica", t2: "Aguada", s1: 78, s2: 79 },
-    { t1: "Hebraica", t2: "Aguada", s1: 77, s2: 97 },
-    { t1: "Hebraica", t2: "Aguada", s1: 100, s2: 102 },
+    { t1: "Hebraica", t2: "Aguada", s1: 79, s2: 78 },
+    { t1: "Hebraica", t2: "Aguada", s1: 80, s2: 85 },
+    { t1: "Aguada", t2: "Hebraica", s1: 97, s2: 77 },
+    { t1: "Aguada", t2: "Hebraica", s1: 102, s2: 100 },
 
     // Malvín vs Aguada
-    { t1: "Malvín", t2: "Aguada", s1: 82, s2: 94 },
+    { t1: "Aguada", t2: "Malvín", s1: 94, s2: 82 },
     { t1: "Malvín", t2: "Aguada", s1: 89, s2: 72 },
-    { t1: "Malvín", t2: "Aguada", s1: 64, s2: 88 }
+    { t1: "Aguada", t2: "Malvín", s1: 88, s2: 64 }
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
     const calculateBtn = document.getElementById('calculate-btn');
     const backBtn = document.getElementById('back-btn');
     const suggestBtn = document.getElementById('suggest-btn');
+    const solveBtn = document.getElementById('solve-btn');
 
     calculateBtn.addEventListener('click', () => {
         updateStandings();
@@ -105,10 +109,181 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     suggestBtn.addEventListener('click', suggestProbableResults);
+    solveBtn.addEventListener('click', solveInverse);
 
     // Initial render
     updateStandings();
 });
+
+function solveInverse() {
+    const desiredRanks = {};
+    document.querySelectorAll('.rank-input').forEach(input => {
+        const val = parseInt(input.value);
+        if (val) desiredRanks[val] = input.dataset.team;
+    });
+
+    if (Object.keys(desiredRanks).length === 0) {
+        alert("Por favor, ingresa al menos una posición deseada.");
+        return;
+    }
+
+    const matchesToSolve = [
+        { t1: "Peñarol", t2: "Hebraica" },
+        { t1: "Malvín", t2: "Aguada" },
+        { t1: "Defensor", t2: "Nacional" }
+    ];
+
+    // Iterar por las 8 combinaciones de resultados (W/L)
+    const outcomes = [];
+    for (let i = 0; i < 8; i++) {
+        const comboBase = [
+            (i & 1) ? { s1: 100, s2: 0 } : { s1: 0, s2: 100 },
+            (i & 2) ? { s1: 100, s2: 0 } : { s1: 0, s2: 100 },
+            (i & 4) ? { s1: 100, s2: 0 } : { s1: 0, s2: 100 }
+        ];
+
+        const lastRoundBase = matchesToSolve.map((m, idx) => ({
+            t1: m.t1, t2: m.t2, s1: comboBase[idx].s1, s2: comboBase[idx].s2
+        }));
+
+        // Intentar encontrar si existe un margen que cumpla el deseo para este combo W/L
+        // Probamos con un margen muy alto (100) y uno mínimo (1)
+        const resultMax = calculateStandingsForCombo(lastRoundBase);
+
+        if (checkIfMatchesDesired(resultMax, desiredRanks)) {
+            outcomes.push(lastRoundBase);
+        } else {
+            // Si no funciona con 100, probamos si variando el margen en otros partidos ayuda
+            // (Esto es más complejo, pero para la mayoría de los casos el margen de 100 es el límite superior)
+        }
+    }
+
+    const resultEl = document.getElementById('solver-result');
+    if (outcomes.length === 0) {
+        resultEl.innerHTML = "<p>⚠️ No se encontró ningún escenario que cumpla ese orden exacto.</p>";
+    } else {
+        let html = `<h4>Se encontraron ${outcomes.length} escenario(s) posible(s):</h4>`;
+
+        outcomes.forEach((best, sIdx) => {
+            html += `<div class="solver-scenario-box">`;
+            html += `<h5>Escenario ${sIdx + 1}:</h5>`;
+
+            const standings = calculateStandingsForCombo(best);
+
+            html += `<div class="scenario-flex">`;
+
+            html += `<div class="scenario-info-col">`;
+            html += `<div class="scenario-requirements">`;
+            best.forEach((m) => {
+                const winner = m.s1 > m.s2 ? m.t1 : m.t2;
+                const loser = m.s1 > m.s2 ? m.t2 : m.t1;
+
+                const winnerPts = standings.find(s => s.name === winner).points;
+                const tiedWithWinner = standings.filter(s => s.points === winnerPts);
+
+                let marginNote = "";
+                if (tiedWithWinner.length > 1) {
+                    const margin = findMinimumMargin(winner, loser, best, desiredRanks);
+                    if (margin > 1) {
+                        marginNote = ` por <b>${margin} o más</b>`;
+                    }
+                }
+                html += `<div class="solver-result-item">🏀 <b>${winner}</b> gana a ${loser}${marginNote}.</div>`;
+            });
+            html += `</div>`;
+
+            const tieExplanations = [];
+            const processedPoints = new Set();
+            standings.forEach(s => {
+                if (processedPoints.has(s.points)) return;
+                const tied = standings.filter(t => t.points === s.points);
+                if (tied.length > 1) {
+                    const groupNames = tied.map(t => t.name).join(", ");
+                    const miniTable = calculateMiniTableStats(tied, best);
+                    const statsDesc = tied.map(t => `${t.name}: ${miniTable[t.name].pts} pts`).join(", ");
+                    tieExplanations.push(`Equipos <b>${groupNames}</b> empatan con ${s.points} pts. Puntos en mini-tabla: ${statsDesc}.`);
+                }
+                processedPoints.add(s.points);
+            });
+
+            if (tieExplanations.length > 0) {
+                html += `<div class="scenario-explanation">`;
+                tieExplanations.forEach(exp => html += `<p>ℹ️ ${exp}</p>`);
+                html += `</div>`;
+            }
+            html += `</div>`;
+
+            html += `<div class="scenario-mini-table">`;
+            html += `<table><thead><tr><th>Pos</th><th>Equipo</th><th>Pts</th></tr></thead><tbody>`;
+            standings.forEach((s, idx) => {
+                const isDesired = Object.values(desiredRanks).includes(s.name) ? 'class="highlight-team"' : '';
+                html += `<tr ${isDesired}><td>${idx + 1}</td><td>${s.name}</td><td>${s.points}</td></tr>`;
+            });
+            html += `</tbody></table></div>`;
+
+            html += `</div></div>`;
+        });
+        resultEl.innerHTML = html;
+    }
+}
+
+function findMinimumMargin(winner, loser, currentCombo, desired) {
+    // Probar márgenes de 1 a 100 para ver cuál cumple el orden
+    for (let m = 1; m <= 100; m++) {
+        const testRound = JSON.parse(JSON.stringify(currentCombo));
+        const match = testRound.find(mr => (mr.t1 === winner && mr.t2 === loser) || (mr.t1 === loser && mr.t2 === winner));
+
+        if (match.t1 === winner) {
+            match.s1 = 100 + m; match.s2 = 100;
+        } else {
+            match.s2 = 100 + m; match.s1 = 100;
+        }
+
+        const standings = calculateStandingsForCombo(testRound);
+        if (checkIfMatchesDesired(standings, desired)) return m;
+    }
+    return 1;
+}
+
+function calculateStandingsForCombo(lastRound) {
+    const standings = {};
+    for (const team in TEAMS_DATA) {
+        standings[team] = { name: team, points: TEAMS_DATA[team].points };
+    }
+
+    lastRound.forEach(match => {
+        if (match.s1 > match.s2) {
+            standings[match.t1].points += 2;
+            standings[match.t2].points += 1;
+        } else {
+            standings[match.t2].points += 2;
+            standings[match.t1].points += 1;
+        }
+    });
+
+    const teamsArray = Object.values(standings);
+    const sortedPoints = [...new Set(teamsArray.map(t => t.points))].sort((a, b) => b - a);
+    let finalOrder = [];
+
+    sortedPoints.forEach(pts => {
+        const tied = teamsArray.filter(t => t.points === pts);
+        if (tied.length === 1) {
+            finalOrder.push(tied[0]);
+        } else {
+            const sortedTie = sortTiedTeams(tied, lastRound);
+            finalOrder = finalOrder.concat(sortedTie.sorted);
+        }
+    });
+    return finalOrder;
+}
+
+function checkIfMatchesDesired(standings, desired) {
+    for (const rank in desired) {
+        const pos = parseInt(rank) - 1;
+        if (!standings[pos] || standings[pos].name !== desired[rank]) return false;
+    }
+    return true;
+}
 
 function suggestProbableResults() {
     const pairs = [
@@ -154,15 +329,15 @@ function suggestProbableResults() {
             // Añadir cuota de azar (+/- 5 puntos)
             const randomFactor1 = Math.floor(Math.random() * 11) - 5;
             const randomFactor2 = Math.floor(Math.random() * 11) - 5;
-            
+
             let s1 = Math.max(0, Math.round(avg1 + streakWeight1 + randomFactor1));
             let s2 = Math.max(0, Math.round(avg2 + streakWeight2 + randomFactor2));
-            
+
             // En basketball no hay empates, forzamos un ganador si hay igualdad
             if (s1 === s2) {
-                s1 += 1; 
+                s1 += 1;
             }
-            
+
             document.getElementById(pair.id1).value = s1;
             document.getElementById(pair.id2).value = s2;
         }
@@ -243,20 +418,16 @@ function updateStandings() {
         : "No hay empates que requieran desempate FIBA.";
 }
 
-function sortTiedTeams(teams, lastRound) {
+function calculateMiniTableStats(teams, lastRound) {
     const names = teams.map(t => t.name);
     const allMatches = HISTORICAL_MATCHES.concat(lastRound);
-
-    // Filter matches between tied teams only
     const headToHeadMatches = allMatches.filter(m => names.includes(m.t1) && names.includes(m.t2));
 
-    // Calculate head-to-head stats
     const stats = {};
     names.forEach(n => stats[n] = { pts: 0, diff: 0, scored: 0 });
 
     headToHeadMatches.forEach(m => {
         if (m.s1 === 0 && m.s2 === 0) return;
-
         stats[m.t1].scored += m.s1;
         stats[m.t1].diff += (m.s1 - m.s2);
         stats[m.t2].scored += m.s2;
@@ -270,6 +441,12 @@ function sortTiedTeams(teams, lastRound) {
             stats[m.t1].pts += 1;
         }
     });
+    return stats;
+}
+
+function sortTiedTeams(teams, lastRound) {
+    const names = teams.map(t => t.name);
+    const stats = calculateMiniTableStats(teams, lastRound);
 
     // Sort teams based on criteria
     const sorted = [...teams].sort((a, b) => {

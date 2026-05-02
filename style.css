@@ -253,13 +253,120 @@ input::-webkit-inner-spin-button {
     margin-top: 20px;
 }
 
-.primary-btn:hover, .secondary-btn:hover, .suggest-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(240, 100, 20, 0.4);
+.solver-card {
+    margin-top: 30px;
+    background: linear-gradient(rgba(26, 26, 46, 0.9), rgba(15, 15, 27, 0.9));
 }
 
-.primary-btn:active {
-    transform: translateY(0);
+.solver-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.solver-team-row {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: var(--glass);
+    padding: 12px;
+    border-radius: 12px;
+    align-items: center;
+}
+
+.rank-input {
+    width: 100%;
+    max-width: 60px;
+}
+
+.solver-result {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px dashed var(--glass-border);
+}
+
+.solver-result-item {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.solver-scenario-box {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border-left: 4px solid var(--primary);
+}
+
+.solver-scenario-box h5 {
+    margin: 0 0 10px 0;
+    color: var(--primary);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.scenario-flex {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.scenario-info-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.scenario-requirements {
+    flex: 0 0 auto;
+}
+
+.scenario-mini-table {
+    flex: 0 0 200px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.scenario-mini-table table {
+    width: 100%;
+}
+
+.scenario-mini-table th, .scenario-mini-table td {
+    padding: 4px 8px;
+    text-align: left;
+}
+
+.highlight-team {
+    background: rgba(240, 100, 20, 0.2);
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.scenario-explanation {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.8rem;
+    color: #aaa;
+    line-height: 1.4;
+}
+
+.scenario-explanation p {
+    margin: 5px 0;
+}
+
+.scenario-explanation b {
+    color: #ddd;
 }
 
 .table-responsive {

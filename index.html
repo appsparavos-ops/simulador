@@ -93,6 +93,45 @@
                 <button id="back-btn" class="secondary-btn mobile-only">Modificar Resultados</button>
             </div>
         </section>
+
+        <!-- Nueva Sección: Calculadora Inversa -->
+        <section class="card solver-card">
+            <h2>Calculadora Inversa (¿Qué tiene que pasar?)</h2>
+            <p class="instruction">Indica la posición deseada para los equipos y calcularemos qué resultados se necesitan.</p>
+            
+            <div class="solver-grid">
+                <div class="solver-team-row">
+                    <span class="team-name">Peñarol</span>
+                    <input type="number" class="rank-input" data-team="Peñarol" min="1" max="6" placeholder="Pos">
+                </div>
+                <div class="solver-team-row">
+                    <span class="team-name">Nacional</span>
+                    <input type="number" class="rank-input" data-team="Nacional" min="1" max="6" placeholder="Pos">
+                </div>
+                <div class="solver-team-row">
+                    <span class="team-name">Malvín</span>
+                    <input type="number" class="rank-input" data-team="Malvín" min="1" max="6" placeholder="Pos">
+                </div>
+                <div class="solver-team-row">
+                    <span class="team-name">Hebraica</span>
+                    <input type="number" class="rank-input" data-team="Hebraica" min="1" max="6" placeholder="Pos">
+                </div>
+                <div class="solver-team-row">
+                    <span class="team-name">Aguada</span>
+                    <input type="number" class="rank-input" data-team="Aguada" min="1" max="6" placeholder="Pos">
+                </div>
+                <div class="solver-team-row">
+                    <span class="team-name">Defensor</span>
+                    <input type="number" class="rank-input" data-team="Defensor" min="1" max="6" placeholder="Pos">
+                </div>
+            </div>
+
+            <button id="solve-btn" class="primary-btn">Encontrar Escenario Necesario</button>
+            
+            <div id="solver-result" class="solver-result">
+                <!-- Resultados del cálculo inverso -->
+            </div>
+        </section>
     </main>
 
     <footer>
