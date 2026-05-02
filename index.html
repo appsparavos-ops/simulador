@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Playoffs - FIBA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    
+    <header>
+        <div class="container">
+            <h1>Simulador de Playoffs</h1>
+            <p class="subtitle">Definición de Posiciones - Sistema FIBA</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="simulator-grid">
+            <!-- Columna Izquierda: Entradas -->
+            <div class="card inputs-card">
+                <h2>Última Fecha</h2>
+                <p class="instruction">Ingresa los resultados para calcular el orden final.</p>
+                
+                <div class="matches-input">
+                    <div class="match-row" id="match-pen-heb">
+                        <div class="team-input">
+                            <span class="team-name">Peñarol</span>
+                            <input type="number" id="score-pen" placeholder="0" min="0">
+                        </div>
+                        <div class="vs">VS</div>
+                        <div class="team-input">
+                            <input type="number" id="score-heb" placeholder="0" min="0">
+                            <span class="team-name">Hebraica</span>
+                        </div>
+                    </div>
+
+                    <div class="match-row" id="match-mal-agu">
+                        <div class="team-input">
+                            <span class="team-name">Malvín</span>
+                            <input type="number" id="score-mal" placeholder="0" min="0">
+                        </div>
+                        <div class="vs">VS</div>
+                        <div class="team-input">
+                            <input type="number" id="score-agu" placeholder="0" min="0">
+                            <span class="team-name">Aguada</span>
+                        </div>
+                    </div>
+
+                    <div class="match-row" id="match-def-nac">
+                        <div class="team-input">
+                            <span class="team-name">Defensor</span>
+                            <input type="number" id="score-def" placeholder="0" min="0">
+                        </div>
+                        <div class="vs">VS</div>
+                        <div class="team-input">
+                            <input type="number" id="score-nac" placeholder="0" min="0">
+                            <span class="team-name">Nacional</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btn-group">
+                    <button id="calculate-btn" class="primary-btn">Calcular Posiciones</button>
+                    <button id="suggest-btn" class="suggest-btn">Sugerir Resultados</button>
+                </div>
+            </div>
+
+            <!-- Columna Derecha: Tabla -->
+            <div class="card table-card">
+                <h2>Tabla de Posiciones</h2>
+                <div class="table-responsive">
+                    <table id="standings-table">
+                        <thead>
+                            <tr>
+                                <th>Pos</th>
+                                <th>Equipo</th>
+                                <th>Pts</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Se llena con JS -->
+                        </tbody>
+                    </table>
+                </div>
+                <div id="tiebreak-info" class="tiebreak-info">
+                    <!-- Información sobre desempates -->
+                </div>
+                <button id="back-btn" class="secondary-btn mobile-only">Modificar Resultados</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Simulador de Basketball - Criterios FIBA</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
